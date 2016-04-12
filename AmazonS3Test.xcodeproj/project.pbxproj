@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C47F912D1CBD484500A1F4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F912C1CBD484500A1F4B7 /* AppDelegate.swift */; };
+		C47F912F1CBD484500A1F4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F912E1CBD484500A1F4B7 /* ViewController.swift */; };
+		C47F91321CBD484500A1F4B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47F91301CBD484500A1F4B7 /* Main.storyboard */; };
+		C47F91341CBD484500A1F4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47F91331CBD484500A1F4B7 /* Assets.xcassets */; };
+		C47F91371CBD484500A1F4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47F91351CBD484500A1F4B7 /* LaunchScreen.storyboard */; };
+		C47F91421CBD484500A1F4B7 /* AmazonS3TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F91411CBD484500A1F4B7 /* AmazonS3TestTests.swift */; };
+		C47F914D1CBD484500A1F4B7 /* AmazonS3TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F914C1CBD484500A1F4B7 /* AmazonS3TestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C47F913E1CBD484500A1F4B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47F91211CBD484500A1F4B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C47F91281CBD484500A1F4B7;
+			remoteInfo = AmazonS3Test;
+		};
+		C47F91491CBD484500A1F4B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47F91211CBD484500A1F4B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C47F91281CBD484500A1F4B7;
+			remoteInfo = AmazonS3Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C47F91291CBD484500A1F4B7 /* AmazonS3Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonS3Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F912C1CBD484500A1F4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C47F912E1CBD484500A1F4B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C47F91311CBD484500A1F4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C47F91331CBD484500A1F4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C47F91361CBD484500A1F4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C47F91381CBD484500A1F4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47F913D1CBD484500A1F4B7 /* AmazonS3TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonS3TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F91411CBD484500A1F4B7 /* AmazonS3TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonS3TestTests.swift; sourceTree = "<group>"; };
+		C47F91431CBD484500A1F4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47F91481CBD484500A1F4B7 /* AmazonS3TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazonS3TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47F914C1CBD484500A1F4B7 /* AmazonS3TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonS3TestUITests.swift; sourceTree = "<group>"; };
+		C47F914E1CBD484500A1F4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C47F91261CBD484500A1F4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F913A1CBD484500A1F4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F91451CBD484500A1F4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C47F91201CBD484500A1F4B7 = {
+			isa = PBXGroup;
+			children = (
+				C47F912B1CBD484500A1F4B7 /* AmazonS3Test */,
+				C47F91401CBD484500A1F4B7 /* AmazonS3TestTests */,
+				C47F914B1CBD484500A1F4B7 /* AmazonS3TestUITests */,
+				C47F912A1CBD484500A1F4B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C47F912A1CBD484500A1F4B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C47F91291CBD484500A1F4B7 /* AmazonS3Test.app */,
+				C47F913D1CBD484500A1F4B7 /* AmazonS3TestTests.xctest */,
+				C47F91481CBD484500A1F4B7 /* AmazonS3TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C47F912B1CBD484500A1F4B7 /* AmazonS3Test */ = {
+			isa = PBXGroup;
+			children = (
+				C47F912C1CBD484500A1F4B7 /* AppDelegate.swift */,
+				C47F912E1CBD484500A1F4B7 /* ViewController.swift */,
+				C47F91301CBD484500A1F4B7 /* Main.storyboard */,
+				C47F91331CBD484500A1F4B7 /* Assets.xcassets */,
+				C47F91351CBD484500A1F4B7 /* LaunchScreen.storyboard */,
+				C47F91381CBD484500A1F4B7 /* Info.plist */,
+			);
+			path = AmazonS3Test;
+			sourceTree = "<group>";
+		};
+		C47F91401CBD484500A1F4B7 /* AmazonS3TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				C47F91411CBD484500A1F4B7 /* AmazonS3TestTests.swift */,
+				C47F91431CBD484500A1F4B7 /* Info.plist */,
+			);
+			path = AmazonS3TestTests;
+			sourceTree = "<group>";
+		};
+		C47F914B1CBD484500A1F4B7 /* AmazonS3TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C47F914C1CBD484500A1F4B7 /* AmazonS3TestUITests.swift */,
+				C47F914E1CBD484500A1F4B7 /* Info.plist */,
+			);
+			path = AmazonS3TestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C47F91281CBD484500A1F4B7 /* AmazonS3Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47F91511CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3Test" */;
+			buildPhases = (
+				C47F91251CBD484500A1F4B7 /* Sources */,
+				C47F91261CBD484500A1F4B7 /* Frameworks */,
+				C47F91271CBD484500A1F4B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonS3Test;
+			productName = AmazonS3Test;
+			productReference = C47F91291CBD484500A1F4B7 /* AmazonS3Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C47F913C1CBD484500A1F4B7 /* AmazonS3TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47F91541CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3TestTests" */;
+			buildPhases = (
+				C47F91391CBD484500A1F4B7 /* Sources */,
+				C47F913A1CBD484500A1F4B7 /* Frameworks */,
+				C47F913B1CBD484500A1F4B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C47F913F1CBD484500A1F4B7 /* PBXTargetDependency */,
+			);
+			name = AmazonS3TestTests;
+			productName = AmazonS3TestTests;
+			productReference = C47F913D1CBD484500A1F4B7 /* AmazonS3TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C47F91471CBD484500A1F4B7 /* AmazonS3TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47F91571CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3TestUITests" */;
+			buildPhases = (
+				C47F91441CBD484500A1F4B7 /* Sources */,
+				C47F91451CBD484500A1F4B7 /* Frameworks */,
+				C47F91461CBD484500A1F4B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C47F914A1CBD484500A1F4B7 /* PBXTargetDependency */,
+			);
+			name = AmazonS3TestUITests;
+			productName = AmazonS3TestUITests;
+			productReference = C47F91481CBD484500A1F4B7 /* AmazonS3TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C47F91211CBD484500A1F4B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Raul Uranga";
+				TargetAttributes = {
+					C47F91281CBD484500A1F4B7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					C47F913C1CBD484500A1F4B7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C47F91281CBD484500A1F4B7;
+					};
+					C47F91471CBD484500A1F4B7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C47F91281CBD484500A1F4B7;
+					};
+				};
+			};
+			buildConfigurationList = C47F91241CBD484500A1F4B7 /* Build configuration list for PBXProject "AmazonS3Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C47F91201CBD484500A1F4B7;
+			productRefGroup = C47F912A1CBD484500A1F4B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C47F91281CBD484500A1F4B7 /* AmazonS3Test */,
+				C47F913C1CBD484500A1F4B7 /* AmazonS3TestTests */,
+				C47F91471CBD484500A1F4B7 /* AmazonS3TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C47F91271CBD484500A1F4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47F91371CBD484500A1F4B7 /* LaunchScreen.storyboard in Resources */,
+				C47F91341CBD484500A1F4B7 /* Assets.xcassets in Resources */,
+				C47F91321CBD484500A1F4B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F913B1CBD484500A1F4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F91461CBD484500A1F4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C47F91251CBD484500A1F4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47F912F1CBD484500A1F4B7 /* ViewController.swift in Sources */,
+				C47F912D1CBD484500A1F4B7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F91391CBD484500A1F4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47F91421CBD484500A1F4B7 /* AmazonS3TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47F91441CBD484500A1F4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47F914D1CBD484500A1F4B7 /* AmazonS3TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C47F913F1CBD484500A1F4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C47F91281CBD484500A1F4B7 /* AmazonS3Test */;
+			targetProxy = C47F913E1CBD484500A1F4B7 /* PBXContainerItemProxy */;
+		};
+		C47F914A1CBD484500A1F4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C47F91281CBD484500A1F4B7 /* AmazonS3Test */;
+			targetProxy = C47F91491CBD484500A1F4B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C47F91301CBD484500A1F4B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47F91311CBD484500A1F4B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C47F91351CBD484500A1F4B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C47F91361CBD484500A1F4B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C47F914F1CBD484500A1F4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C47F91501CBD484500A1F4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C47F91521CBD484500A1F4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AmazonS3Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C47F91531CBD484500A1F4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AmazonS3Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C47F91551CBD484500A1F4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmazonS3TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonS3Test.app/AmazonS3Test";
+			};
+			name = Debug;
+		};
+		C47F91561CBD484500A1F4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmazonS3TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3TestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazonS3Test.app/AmazonS3Test";
+			};
+			name = Release;
+		};
+		C47F91581CBD484500A1F4B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AmazonS3TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3TestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AmazonS3Test;
+			};
+			name = Debug;
+		};
+		C47F91591CBD484500A1F4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AmazonS3TestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rauluranga.AmazonS3TestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AmazonS3Test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C47F91241CBD484500A1F4B7 /* Build configuration list for PBXProject "AmazonS3Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47F914F1CBD484500A1F4B7 /* Debug */,
+				C47F91501CBD484500A1F4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47F91511CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47F91521CBD484500A1F4B7 /* Debug */,
+				C47F91531CBD484500A1F4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C47F91541CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47F91551CBD484500A1F4B7 /* Debug */,
+				C47F91561CBD484500A1F4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C47F91571CBD484500A1F4B7 /* Build configuration list for PBXNativeTarget "AmazonS3TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47F91581CBD484500A1F4B7 /* Debug */,
+				C47F91591CBD484500A1F4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C47F91211CBD484500A1F4B7 /* Project object */;
+}
