@@ -39,7 +39,34 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     
     @IBAction func onUploadPicture(sender: AnyObject) {
-        puts("onUploadPicture")
+        
+        let uploadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        uploadingNotification.mode = MBProgressHUDMode.Indeterminate
+        uploadingNotification.labelText = "Uploading"
+        
+        let amazonS3Manager = AmazonS3RequestManager(bucket: kS3Bucket,
+                                                     region: kS3Region,
+                                                     accessKey: kS3AccessKey,
+                                                     secret: kS3Secret)
+        
+        let fileURL: NSURL = NSURL(fileURLWithPath: (self.localPath?.path)!)
+        
+        amazonS3Manager.putObject(fileURL, destinationPath: self.localPath!.lastPathComponent!).responseS3Data { (response) -> Void in
+            
+            puts("response complete")
+            print(response.request)  // original URL request
+            print(response.response) // URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            uploadingNotification.customView = UIImageView(image: UIImage(named: "Checkmark"));
+            uploadingNotification.mode = MBProgressHUDMode.CustomView;
+            uploadingNotification.labelText = "Done"
+            
+            NSTimer.after(2.seconds) {
+                uploadingNotification.hide(true)
+            }
+        }
     }
     
     // MARK: - UIImagePickerControllerDelegate methods

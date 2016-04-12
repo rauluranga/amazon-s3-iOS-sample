@@ -7,6 +7,7 @@ target 'AmazonS3Test' do
   pod 'Alamofire', '~> 3.3'
   pod 'AmazonS3RequestManager', '~> 0.10'
   pod 'MBProgressHUD', '~> 0.9.2'
+  pod 'SwiftyTimer'
 end
 
 target 'AmazonS3TestTests' do

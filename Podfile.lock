@@ -4,17 +4,20 @@ PODS:
     - Alamofire (~> 3.0)
     - SWXMLHash (~> 2.0)
   - MBProgressHUD (0.9.2)
+  - SwiftyTimer (1.4.0)
   - SWXMLHash (2.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
   - AmazonS3RequestManager (~> 0.10)
   - MBProgressHUD (~> 0.9.2)
+  - SwiftyTimer
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   AmazonS3RequestManager: a88f4596165b46961a6bf904f357ba2aab4931b6
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  SwiftyTimer: db4458cfaf67fc71e16ad6e4637c60b86f76a649
   SWXMLHash: 795c66e74f4cc9473ad6465c6653c5a6f59f417e
 
 COCOAPODS: 0.39.0
