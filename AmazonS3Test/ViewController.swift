@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import MBProgressHUD
+import AmazonS3RequestManager
+import SwiftyTimer
+
+let kS3Bucket = "YOUR_S3_BUCKET_NAME";
+let kS3Region = AmazonS3Region.USWest1;
+let kS3AccessKey = "YOUR_S3_ACCESS_KEY";
+let kS3Secret = "YOUR_S3_SECRET_KEY";
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
 
